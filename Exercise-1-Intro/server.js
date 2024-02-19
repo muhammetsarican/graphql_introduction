@@ -4,8 +4,7 @@ const schema= require("./schema/schema");
 
 const app=express();
 const handler=createHandler({
-	schema,
-	graphiql:true
+	schema
 });
 
 app.get("/", (req, res, next)=>{
